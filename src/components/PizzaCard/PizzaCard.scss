@@ -1,0 +1,100 @@
+.card__wrapper {
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 12px;
+  min-width: 250px;
+  box-shadow: #0000001a 0rem 0.25rem 0.375rem -0.0625rem,
+    #0000000f 0rem 0.125rem 0.25rem -0.0625rem;
+
+  .card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card__body-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    .card__body-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #000;
+    }
+    .card__body-description {
+      font-size: 1rem;
+      color: #8f8b8b;
+    }
+    .card__body-price {
+      font-size: 2rem;
+      color: rgb(255, 167, 38);
+      font-weight: bold;
+
+      span {
+        font-size: 1.5rem;
+      }
+    }
+    .card__body-regulator {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px;
+
+      .card__body-regulator-minus {
+        text-align: center;
+        min-width: 32px !important;
+        height: 32px;
+        color: rgb(82, 80, 80);
+        font-weight: 600;
+        border: 1px solid rgb(255, 167, 38);
+        border-radius: 5px;
+
+        &:hover {
+          background-color: rgb(255, 167, 38);
+          color: white;
+        }
+      }
+      .card__body-regulator-count {
+        font-size: 1.2rem;
+        color: rgb(82, 80, 80);
+        // font-weight: 600;
+        margin: 0 20px;
+      }
+      .card__body-regulator-plus {
+        text-align: center;
+        min-width: 32px !important;
+        height: 32px;
+        color: rgb(82, 80, 80);
+        font-weight: 600;
+        border: 1px solid rgb(255, 167, 38);
+        border-radius: 5px;
+
+        &:hover {
+          background-color: rgb(255, 167, 38);
+          color: white;
+        }
+      }
+    }
+    .card__body-button {
+      width: 70%;
+      padding: 15px;
+      border: none;
+      border-radius: 20px;
+      background-color: rgb(255, 167, 38);
+      color: white;
+      font-size: 15px;
+      line-height: 0;
+      font-weight: 600;
+      text-transform: capitalize;
+      span {
+        margin-left: 10px;
+      }
+      &:hover {
+        background-color: rgb(0, 0, 0);
+        color: white;
+      }
+    }
+  }
+}
