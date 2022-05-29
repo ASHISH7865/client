@@ -7,6 +7,21 @@
   box-shadow: #0000001a 0rem 0.25rem 0.375rem -0.0625rem,
     #0000000f 0rem 0.125rem 0.25rem -0.0625rem;
 
+  .card__favorite-checkbox {
+    &::after {
+      content: "a";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0.125rem 0.125rem 0 0;
+      border-color: transparent transparent transparent #fff;
+      position: absolute;
+      top: 0.125rem;
+      right: 0.125rem;
+    }
+  }
+
   .card__body {
     display: flex;
     flex-direction: column;
@@ -59,7 +74,7 @@
       .card__body-regulator-count {
         font-size: 1.2rem;
         color: rgb(82, 80, 80);
-        // font-weight: 600;
+        font-weight: 600;
         margin: 0 20px;
       }
       .card__body-regulator-plus {
@@ -88,6 +103,7 @@
       line-height: 0;
       font-weight: 600;
       text-transform: capitalize;
+      margin-top: 10px;
       span {
         margin-left: 10px;
       }
