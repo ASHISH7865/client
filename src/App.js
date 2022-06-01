@@ -10,6 +10,7 @@ function App() {
       <div className="main__wrapper">
         <Sidenav />
         <div className="main__container">
+     
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menu />} />

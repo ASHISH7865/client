@@ -3,9 +3,9 @@
   margin: 10px;
   background-color: white;
   border-radius: 12px;
-  min-width: 250px;
-  box-shadow: #0000001a 0rem 0.25rem 0.375rem -0.0625rem,
-    #0000000f 0rem 0.125rem 0.25rem -0.0625rem;
+  width: 250px;
+  // height: 00px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   .card__favorite-checkbox {
     &::after {
@@ -34,17 +34,30 @@
       border-radius: 50%;
     }
     .card__body-title {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: bold;
       color: #000;
+      margin-top: 10px;
+      width: 80%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .card__body-description {
-      font-size: 1rem;
+      text-align: center;
+      margin-top: 10px;
+
+      font-size: 0.8rem;
       color: #8f8b8b;
+      width: 80%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .card__body-price {
       font-size: 2rem;
-      color: rgb(255, 167, 38);
+      color: #ffa726;
       font-weight: bold;
 
       span {

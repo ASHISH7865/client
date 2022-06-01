@@ -7,9 +7,8 @@ import Button from "@mui/material/Button";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 
-const ItemCard = ({ItemName, description, ItemPrice }) => {
+const ItemCard = ({ ItemName, description, ItemPrice }) => {
   const [ItemCount, setItemCount] = useState(0);
-
 
   const decreaseItemCount = () => {
     if (ItemCount > 0) {
@@ -21,18 +20,16 @@ const ItemCard = ({ItemName, description, ItemPrice }) => {
       setItemCount(ItemCount + 1);
     }
   };
-  const addToCartHandler =() =>{
-    setItemCount(0)
-
-  }
-
+  const addToCartHandler = () => {
+    setItemCount(0);
+  };
 
   return (
     <>
       <div className="card__wrapper">
-        <Stack direction="row" spacing={1}>
+        {/* <Stack direction="row" spacing={1}>
           <Chip label="Regular" color="primary" />
-        </Stack>
+        </Stack> */}
 
         <div className="card__body">
           <img className="card__body-img" src={ItemImg} alt="src" />

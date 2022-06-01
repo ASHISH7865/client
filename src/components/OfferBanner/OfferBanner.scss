@@ -1,38 +1,41 @@
-.offer-banner{
-  //padding: 20px;
-
-
-  height: 300px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
-  margin-bottom: 20px;
-  width: 70%;
+.banner {
   display: flex;
-  justify-content: flex-end;
-  background: rgba(255, 255, 255, 0.27) url("https://img.freepik.com/free-photo/tasty-pepperoni-pizza-with-mushrooms-olives_79782-1976.jpg?w=1380") no-repeat;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin: 20px 0;
+  .offer-banner {
+    //padding: 20px;
 
-  .offer-banner__content{
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
 
+    .offer-banner__content {
+      .offer-banner__content__text {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
 
-
-    .offer-banner__content__text{
-    padding: 20px;
-      display: flex;
-      flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      h2{
-        font-size:5rem;
-        font-weight: bolder;
-        color: #fff;
-        margin-bottom: 0;
-      }
-      p{
-        font-size: 20px;
-        color: #fff;
-        font-weight: bold;
+        text-align: center;
+        h2 {
+          font-size: 2rem;
+          font-weight: bolder;
+          color: #fff;
+          margin-bottom: 0;
+        }
+        p {
+          font-size: 20px;
+          color: #fff;
+          font-weight: bold;
+        }
       }
     }
   }
-
 }

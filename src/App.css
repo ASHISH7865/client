@@ -1,13 +1,18 @@
 .main__wrapper{
   display: flex;
+  height: calc(100vh - 2rem);
   
-
+  
   
 }
 
 .main__container{
+    position: relative;
     width: calc(100% - 250px);
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
     /* background: gold; */
     margin: 16px 16px 16px 0;
     border-radius: 10px;
